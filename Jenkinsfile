@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'kumaresansoundappan/kanban-dashboard'
+        DOCKER_IMAGE = 'gowshikram/kanban-dashboard'
         CONTAINER_NAME = 'kanban-dashboard'
         HOST_PORT = '8081'
         CONTAINER_PORT = '8080'
