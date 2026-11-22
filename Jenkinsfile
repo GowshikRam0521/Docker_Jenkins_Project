@@ -35,8 +35,8 @@ pipeline {
                     )
                 ]) {
                     sh '''
-                        echo "$DOCKER_PASSWORD" |
-                        docker login -u "$DOCKER_USER" --password-stdin
+                        echo "$DOCKER_PASSWORD" | docker login \
+                            -u "$DOCKER_USER" --password-stdin
 
                         docker push ${DOCKER_IMAGE}:${BUILD_NUMBER}
                     '''
@@ -59,6 +59,7 @@ pipeline {
                 '''
             }
         }
+    }
 
     post {
         success {
@@ -74,4 +75,4 @@ pipeline {
         }
     }
 }
-}
+
