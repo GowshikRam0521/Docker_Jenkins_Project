@@ -313,10 +313,3 @@ Docker logs when a pipeline stage fails.
 -   Apply container security, resource limits, and operational
     troubleshooting practices.
 
-
-------------------------------------------------------------------------
-
-*This README documents the project details and deployment evidence
-provided with the project. Confirm the current EC2 public IP, Docker
-container port, image tag, and Jenkins job settings before reusing the
-deployment commands in another environment.*
